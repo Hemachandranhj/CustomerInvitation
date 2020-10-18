@@ -1,5 +1,4 @@
-﻿using System;
-namespace InvitationApp.Shared
+﻿namespace InvitationApp.Shared
 {
     /// <summary>
     /// Extension class to format the json file
@@ -8,7 +7,7 @@ namespace InvitationApp.Shared
     {
         public static string FormatJson(this string value)
         {
-            return value.Replace("},", "},\n");
+            return value.Replace($"}},", "},\n");
         }
     }
 }

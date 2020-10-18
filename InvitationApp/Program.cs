@@ -1,4 +1,6 @@
-﻿namespace InvitationApp
+﻿using InvitationApp.CustomerInvitation;
+
+namespace InvitationApp
 {
     using InvitationApp.FileLoader;
     using InvitationApp.Formulae;
@@ -26,7 +28,7 @@
             
             var maximumDistance = Convert.ToInt32(Console.ReadLine());
             var serviceProvider = AddDependencyInjection();
-            var calculateDistance = serviceProvider.GetService<IInviteCustomer>();
+            var calculateDistance = serviceProvider.GetService<ICustomerInvitationHelper>();
 
             // Find the customers within the given distance
             var customerList = calculateDistance.FindCustomersWithinDistance(gpsCoordinates, maximumDistance);
@@ -44,7 +46,7 @@
         {
             return new ServiceCollection()
                 .AddSingleton<IDataLoader, DataLoader>()
-                .AddSingleton<IInviteCustomer, InviteCustomer>()
+                .AddSingleton<ICustomerInvitationHelper, CustomerInvitationHelper>()
                 .AddSingleton<IDistance, GreatCircleDistance>()
                 .AddSingleton<IConvertUtility, ConvertUtility>()
                 .BuildServiceProvider();

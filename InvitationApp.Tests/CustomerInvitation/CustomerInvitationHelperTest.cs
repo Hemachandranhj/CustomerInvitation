@@ -1,23 +1,23 @@
-namespace InvitationApp.Tests
+namespace InvitationApp.Tests.CustomerInvitation
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using InvitationApp.CustomerInvitation;
     using InvitationApp.FileLoader;
     using InvitationApp.Formulae;
     using InvitationApp.Models;
     using InvitationApp.Shared;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Linq;
 
     [TestClass]
-    public class InviteCustomerTest
+    public class CustomerInvitationHelperTest
     {
         private Mock<IDataLoader> dataLoader;
         private Mock<IDistance> greatCircleDistance;
         private Mock<IConvertUtility> convertUtility;
-        private InviteCustomer underTest;
+        private CustomerInvitationHelper underTest;
 
         [TestInitialize]
         public void TestInitialize() 
@@ -25,7 +25,7 @@ namespace InvitationApp.Tests
             this.dataLoader = new Mock<IDataLoader>();
             this.greatCircleDistance = new Mock<IDistance>();
             this.convertUtility = new Mock<IConvertUtility>();
-            this.underTest = new InviteCustomer(dataLoader.Object, greatCircleDistance.Object, convertUtility.Object);
+            this.underTest = new CustomerInvitationHelper(dataLoader.Object, greatCircleDistance.Object, convertUtility.Object);
         }
 
         [TestMethod]
