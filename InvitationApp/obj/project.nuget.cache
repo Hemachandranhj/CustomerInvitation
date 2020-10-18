@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "z+QpxcziHRVAqC9ni3s6Xsyc8AuikvQCQ/sp6zxTK8ChWXFFO5AjVVY7IiBxSzH8Dvhu5uo2LeD19Qe4kpjItw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vikia\\Documents\\Anand\\Resume\\Interview Questionnaire\\CustomerInvitation\\InvitationApp\\InvitationApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vikia\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.9\\microsoft.extensions.dependencyinjection.3.1.9.nupkg.sha512",
+    "C:\\Users\\vikia\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.9\\microsoft.extensions.dependencyinjection.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\vikia\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
