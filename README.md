@@ -15,7 +15,7 @@
 # How to run the application?
  * Download the publish folder and execute the "InvitationApp.exe"
  * Enter the coordinates in Latitude, Longitude format
- * Enter the distance in kilo meter
+ * Enter the distance in kilometer
  * The app will calculate and return the results into the output file(outputCustomers.txt).
  
 # How to run the unit tests
