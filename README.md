@@ -1,5 +1,5 @@
 # CustomerInvitation
- Console App to find and invite customers within the given distance using great-circle distance formulae
+ Console App is to find and invite customers within the given distance using great-circle distance formulae
 
 # The Invitation App is a console application.
  * It takes GPS coordinates and distance(in km) as an input from the user. E.g.53.339428, -6.257664 and 100.
