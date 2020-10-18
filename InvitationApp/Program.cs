@@ -35,7 +35,9 @@ namespace InvitationApp
             
             // write results into the output file
             calculateDistance.GenerateResults(customerList);
-            Console.ReadLine();
+            Console.WriteLine("The results are updated in the output file 'outputCustomers.txt'");
+            Console.WriteLine($"File Location:{Constants.OutputFilePath}");
+            Console.Write("Press any key to close.");
         }
 
         /// <summary>
