@@ -18,7 +18,7 @@
  * Enter the distance in kilometer
  * The app will calculate and return the results into the output file(outputCustomers.txt).
  
-# How to run the unit tests
+# How to run the unit tests?
  Download and install "Download .NET Core Runtime" from the below link
  https://dotnet.microsoft.com/download
  Steps to execute the test
